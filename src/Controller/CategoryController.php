@@ -22,6 +22,6 @@ class CategoryController extends AbstractController
             'musics' => 'musiques du jeu'
         ];
 
-        return $this->render('category/'.$category_name.'.html.twig', ['category_name' => $titles[$category_name] ]);
+        return $this->render('category/'.$category_name.'.html.twig', ['category_name' => $category_name, 'category_title' => $titles[$category_name] ]);
     }
 }

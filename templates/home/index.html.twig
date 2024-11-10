@@ -4,8 +4,8 @@
 
 {% block body %}
     <header>
-        <img src="images/main_logo.png" alt="logo du jeu">
-        <p class="center_text ; font_size_subtitle" style="color: #15CDBB"> Bienvenue sur le wiki francophone d'Outer Wilds </p>
+        <img src="{{ asset('images/main_logo.png') }}" alt="logo du jeu">
+        <p class="center_text ; font_size_subtitle" style="color: rgb(21,205,187)"> Bienvenue sur le wiki francophone d'Outer Wilds </p>
     </header>
     <main class="flex">
         <section class="flex" id="infos">
@@ -50,16 +50,16 @@
                 <p class="center_text ; font_size_paragraph"><span class="highlight ; contents">Mode de publication : </span>Dématerialisé et physique (PS4) </p>
                 <p class="center_text ; font_size_paragraph"><span class="highlight ; contents">Plateformes et dates de sorties : </span></p>
                 <div class="center_text">
-                    <img src="images/epic_logo.svg" alt="epic">
+                    <img src="{{ asset('images/epic_logo.svg') }}" alt="epic">
                     <p class="center_text ; font_size_paragraph">30 Mai 2019</p>
                     <br>
-                    <img src="images/steam_logo.svg" alt="steam">
+                    <img src="{{ asset('images/steam_logo.svg') }}" alt="steam">
                     <p class="center_text ; font_size_paragraph">18 Juin 2020</p>
                     <br>
-                    <img src="images/xbox_logo.svg" alt="xbox">
+                    <img src="{{ asset('images/xbox_logo.svg') }}" alt="xbox">
                     <p class="center_text ; font_size_paragraph">30 Mai 2019</p>
                     <br>
-                    <img src="images/playstation_logo.svg" width="20px" alt="playstation">
+                    <img src="{{ asset('images/playstation_logo.svg') }}" width="20px" alt="playstation">
                     <p class="center_text ; font_size_paragraph">15 Octobre 2019</p>
                 </div>
             </div>
@@ -68,25 +68,25 @@
         <div class="center_text" id="links1">
             <figure>
                 <a href="pages/endings_page.php">
-                    <img src="images/endings_symbol.png" alt="endings">
+                    <img src="{{ asset('images/endings_symbol.png') }}" alt="endings">
                     <figcaption class="highlight ; font_size_paragraph ; center_text">Les fins</figcaption>
                 </a>
             </figure>
             <figure>
                 <a href="">
-                    <img src="images/gameplay_symbol.png" alt="gameplay">
+                    <img src="{{ asset('images/gameplay_symbol.png') }}" alt="gameplay">
                     <figcaption class="highlight ; font_size_paragraph ; center_text">Le gameplay</figcaption>
                 </a>
             </figure>
             <figure>
                 <a href="">
-                    <img src="images/musics_symbol.png" alt="musics">
+                    <img src="{{ asset('images/musics_symbol.png') }}" alt="musics">
                     <figcaption class="highlight ; font_size_paragraph ; center_text">Les musiques</figcaption>
                 </a>
             </figure>
             <figure>
                 <a href="">
-                    <img src="images/characters_symbol.png" alt="characters">
+                    <img src="{{ asset('images/characters_symbol.png') }}" alt="characters">
                     <figcaption class="highlight ; font_size_paragraph ; center_text">Les personnages</figcaption>
                 </a>
             </figure>
@@ -96,19 +96,19 @@
         <div class="center_text" id="links2" style="margin: 0 auto;">
             <figure>
                 <a href="">
-                    <img src="images/planets_symbol.png" alt="planets">
+                    <img src="{{ asset('images/planets_symbol.png') }}" alt="planets">
                     <figcaption class="highlight ; font_size_paragraph ; center_text">Les planètes</figcaption>
                 </a>
             </figure>
             <figure>
                 <a href="">
-                    <img src="images/species_symbol.png" alt="species">
+                    <img src="{{ asset('images/species_symbol.png') }}" alt="species">
                     <figcaption class="highlight ; font_size_paragraph ; center_text">Les races</figcaption>
                 </a>
             </figure>
             <figure>
                 <a href="">
-                    <img src="images/achievements_symbol.png" alt="achievements">
+                    <img src="{{ asset('images/achievements_symbol.png') }}" alt="achievements">
                     <figcaption class="highlight ; font_size_paragraph ; center_text">Les succès</figcaption>
                 </a>
             </figure>

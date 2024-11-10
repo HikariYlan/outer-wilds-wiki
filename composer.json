@@ -98,7 +98,8 @@
         "fix": [
             "@fix:phpcs",
             "@fix:twigcs"
-        ]
+        ],
+        "controller": "php bin/console make:controller"
     },
     "conflict": {
         "symfony/symfony": "*"

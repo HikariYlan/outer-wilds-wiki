@@ -8,9 +8,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CategoryController extends AbstractController
 {
-    #[Route('/endings_category', name: 'app_endings_category')]
-    public function endings_page(): Response
+    #[Route('/{category_name}_category', name: 'app_category')]
+    public function index(string $category_name): Response
     {
-        return $this->render('category/endings.html.twig', ['category_name' => 'les fins du jeu']);
+        return $this->render('category/'.$category_name.'.html.twig', ['category_name' => $category_name]);
     }
 }

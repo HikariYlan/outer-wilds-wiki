@@ -7,6 +7,7 @@
 /public/bundles/
 /var/
 /vendor/
+.idea/
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###
@@ -22,3 +23,12 @@
 ###> symfony/asset-mapper ###
 /public/assets/
 ###< symfony/asset-mapper ###
+
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###
+
+###> vincentlanglet/twig-cs-fixer ###
+/.twig-cs-fixer.cache
+###< vincentlanglet/twig-cs-fixer ###

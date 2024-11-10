@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Outer Wilds Wiki {% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
-        <link rel="icon" href="{{ asset('hub_symbol.png') }}">
+        <link rel="icon" href="{% block icon %}{% endblock %}">
         {% block stylesheets %}{% endblock %}
 
         {% block javascripts %}

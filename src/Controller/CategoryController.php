@@ -8,7 +8,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CategoryController extends AbstractController
 {
-
     #[Route('/endings_category', name: 'app_endings_category')]
     public function endings_page(): Response
     {

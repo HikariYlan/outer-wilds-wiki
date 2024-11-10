@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Outer Wilds Wiki {% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
+        <link rel="icon" href="{% block icon %}{% endblock %}">
+        {% block stylesheets %}{% endblock %}
+
+        {% block javascripts %}
+            {{ importmap() }}
+        {% endblock %}
+    </head>
+    <body id='{% block spoiler %}{% endblock %}'>
+        <header>
+            <img src="{{ asset('/images/main_logo.png') }}" alt="logo du jeu">
+            <p class="center_text ; font_size_title ; title">{{ category_name | capitalize }}</p>
+        </header>
+        <div class="background_div ; font_size_subtitle ; center_text">
+            <p>{% block intro_text %}{% endblock %}</p>
+            <p class="font_size_paragraph ; center_text">{% block intro_subtext %}{% endblock %}</p>
+        </div>
+        {% block body %}{% endblock %}
+    </body>
+</html>

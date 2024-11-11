@@ -12,7 +12,7 @@ class EntryController extends AbstractController
     #[Route('/{category_name}_category/{entry_name}_entry', name: 'app_entry')]
     public function index(string $category_name, string $entry_name): Response
     {
-        return $this->render('entry/index.html.twig',
+        return $this->render('entry/' . $category_name . '/' . $entry_name . '.html.twig',
             [
                 'entry_title' => EntriesList::getEntryFromList(EntriesList::getEntriesList($category_name), $entry_name)
             ]

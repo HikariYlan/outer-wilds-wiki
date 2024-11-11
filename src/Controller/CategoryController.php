@@ -50,6 +50,26 @@ class CategoryController extends AbstractController
         'youll-never-take-me-alive-achievement' => 'You\'ll Never Take Me Alive! (Vous ne m\'aurez jamais en vie !)'
     ];
 
+    private array $gameplay = [
+        'codes-lancement-gameplay' => 'Codes de lancement',
+        'easter-egg-gameplay' => 'Easter eggs',
+        'feu-camp-gameplay' => 'Feu de camp',
+        'fragements-quantiques-gameplay' => 'Fragements quantiques',
+        'matiere-fantome-gameplay' => 'Matière fantôme',
+        'mort-gameplay' => 'Mort',
+        'supernova-gameplay' => 'Supernova'
+    ];
+
+    private array $technologies = [];
+
+    private array $musics = [];
+
+    private array $characters = [];
+
+    private array $planets = [];
+
+    private array $species = [];
+
     #[Route('/{category_name}_category', name: 'app_category')]
     public function index(string $category_name): Response
     {

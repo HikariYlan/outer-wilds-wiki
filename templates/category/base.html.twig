@@ -26,7 +26,7 @@
                         <div style="text-align: center;"><img src="{{ asset('/images/main_logo_dlc.png') }}" alt="main_logo_dlc"></div>
                     {% endif %}
                 <li>
-                    <a href="{{ path('app_entry', {entry_name: path}) }}">{{ title }}</a>
+                    <a href="{{ path('app_entry', {category_name: category_name, entry_name: path}) }}">{{ title }}</a>
                 </li>
                 <li>-----</li>
             {% endfor %}

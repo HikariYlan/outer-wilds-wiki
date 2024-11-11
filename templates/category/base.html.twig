@@ -20,7 +20,13 @@
             <p>{% block intro_text %}{% endblock %}</p>
             <p class="font_size_paragraph ; center_text">{% block intro_subtext %}{% endblock %}</p>
         </div>
-        {% block links_board %}{% endblock %}
+        <ul>
+            {% for path, title in pages_list %}
+                <li>
+                    <a href="{{ path('app_entry', {entry_name: path}) }}">{{ title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
         <a href="{{ path('app_home') }}"><img title="Menu Principal" src="{{ asset('/images/icons/hub_symbol.png') }}" alt="Icône de la page d'accueil" style="width: 5%"></a>
     </body>
 </html>

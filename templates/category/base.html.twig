@@ -30,6 +30,7 @@
                 </li>
                 <li>-----</li>
             {% endfor %}
+            {% block tech_entry %}{% endblock %}
         </ul>
         <a href="{{ path('app_home') }}"><img title="Menu Principal" src="{{ asset('/images/icons/hub_symbol.png') }}" alt="Icône de la page d'accueil" style="width: 5%"></a>
     </body>

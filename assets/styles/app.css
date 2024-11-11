@@ -11,7 +11,7 @@ html, body {
 
 a {
     text-decoration: none;
-    color: var(--turquoise);
+    color: var(--orange);
 }
 
 a:hover {
@@ -108,6 +108,8 @@ img[src$="main_logo_dlc.png"] {
 }
 
 #entries_list {
+    margin-left: 3em;
+    margin-right: 3em;
     font-size: 1.5em;
     text-align: center;
     background-color: rgba(11, 30, 38, 0.5);

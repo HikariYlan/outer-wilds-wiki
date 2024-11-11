@@ -90,8 +90,9 @@ img[src$="main_logo_dlc.png"] {
 .title {
     font-size: 48px;
     text-align: center;
-    color: var(--orange);
+    color: rgb(255, 255, 255);
     text-decoration: underline overline;
+    text-decoration-color: var(--orange);
 }
 
 .white {

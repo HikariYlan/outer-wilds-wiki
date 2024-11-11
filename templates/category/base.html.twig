@@ -20,8 +20,11 @@
             <p>{% block intro_text %}{% endblock %}</p>
             <p class="font_size_paragraph ; center_text">{% block intro_subtext %}{% endblock %}</p>
         </div>
-        <ul id="entries_list">
-            {% for path, title in pages_list %}
+        <ul id="entries_list" style="color: var(--turquoise)">
+            {% for path, title in entries_list %}
+                    {% if path == 'one-outof-nine-hundred-achievement' %}
+                        <div style="text-align: center;"><img src="{{ asset('/images/main_logo_dlc.png') }}" alt="main_logo_dlc"></div>
+                    {% endif %}
                 <li>
                     <a href="{{ path('app_entry', {entry_name: path}) }}">{{ title }}</a>
                 </li>

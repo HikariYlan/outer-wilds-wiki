@@ -69,7 +69,7 @@ class CategoryController extends AbstractController
             [
                 'category_name' => $category_name,
                 'category_title' => $titles[$category_name],
-                'pages_list' => $this->$category_name
+                'entries_list' => $this->$category_name
             ]
         );
     }

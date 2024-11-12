@@ -5,27 +5,27 @@
 {% block body %}
     <header>
         <img src="{{ asset('images/main_logo.png') }}" alt="logo du jeu">
-        <p class="center_text ; font_size_subtitle" style="color: rgb(21,205,187)"> Bienvenue sur le wiki francophone d'Outer Wilds </p>
+        <h1 class="font_size_title ; highlight_turquoise"> Bienvenue sur le wiki francophone d'Outer Wilds </h1>
     </header>
-    <main class="flex">
-        <section class="flex" id="infos">
-            <div class="flex" id="infos1">
-                <div class="background_div ; flex" id="welcome">
-                    <p class="font_size_paragraph ; center_text">Bienvenue sur le compendium <span class="highlight ; font_size_paragraph ; contents">d'Outer Wilds</span>
-                        totalement <span class="highlight ; font_size_paragraph ; contents">traduit en français</span>
-                        par des joueurs, pour les joueurs. Vous retrouverez ici
-                        <span class="highlight ; font_size_paragraph ; contents">toutes les informations</span> concernant le jeu, des planètes aux succès en passant par les fins alternatives. </p>
+    <main>
+        <!-- General infos -->
+        <section>
+            <!-- Introduction -->
+            <div>
+                <div class="background_div">
+                    <p>Bienvenue sur le compendium d'Outer Wilds totalement traduit en français par des joueurs, pour les joueurs.
+                        Vous retrouverez ici toutes les informations concernant le jeu, des planètes aux succès en passant par les fins alternatives. </p>
                 </div>
-                <div class="flex ; font_size_paragraph ; background_div" id="about">
-                    <h2 class="font_size_subtitle ; center_text">A propos d'Outer Wilds :</h2>
-                    <h3 style="font-weight: bold " class="center_text ; highlight ; flex">Bienvenue dans le programme spatial</h3>
-                    <p class="flex ; center_text"> Vous êtes le nouveau membre du programme Odyssée, un programme spatial naissant qui cherche des réponses dans un
+                <div class="background_div">
+                    <h2 class="font_size_title ; highlight_turquoise">A propos d'Outer Wilds :</h2>
+                    <h3 class="font_size_subtitle ; highlight">Bienvenue dans le programme spatial</h3>
+                    <p> Vous êtes le nouveau membre du programme Odyssée, un programme spatial naissant qui cherche des réponses dans un
                         système solaire étrange et en constante évolution. Qui a construit les ruines sur la Rocaille ?
                         Qu’est-ce qui se cache au cœur de Sombronces ? Pourquoi êtes-vous coincé dans une boucle temporelle, et peut-on
                         l’arrêter ? Pour résoudre ces mystères, vous devrez vous aventurer dans les confins les plus dangereux de
                         l’espace.</p>
-                    <h3 style="font-weight: bold " class="center_text ; highlight ; flex">Un monde qui change avec le temps</h3>
-                    <p class="center_text ; flex"> Les planètes de Outer Wilds regorgent d’emplacements cachés qui changent avec le temps. Visitez une ville
+                    <h3 class="font_size_subtitle ; highlight">Un monde qui change avec le temps</h3>
+                    <p> Les planètes de Outer Wilds regorgent d’emplacements cachés qui changent avec le temps. Visitez une ville
                         souterraine avant qu’elle ne soit engloutie par le sable, ou explorez la croûte d’une planète creuse qui
                         s’effondre sous vos pieds. Chaque secret est gardé par des environnements dangereux et des catastrophes
                         naturelles alors que le système solaire devient incontrôlable. Prenez votre équipement de randonnée, attachez
@@ -34,84 +34,93 @@
                         environnement. Suivez un audio mystérieux avec votre onduloscope ou utilisez votre traducteur pour déchiffrer
                         une énigme Nomaï ancienne. Naviguez dans les ténèbres de l’espace avec votre jetpack et votre vaisseau. Il y a
                         beaucoup à découvrir dans
-                        <a href="https://www.mobiusdigitalgames.com/outer-wilds.html" class="highlight ; contents" target="_blank">Outer Wilds</a>.</p>
-                </div>
-                <div class="flex ; background_div" id="maintenance">
-                    <p class="center_text ; font_size_paragraph ; flex"> Ce wiki a été créé par <span class="highlight ; contents">Ylan</span> et <span class="highlight ; contents">Léa</span> <br><br> Et est maintenu par <span class="highlight ; contents">Ylan</span></p>
+                        <a href="https://www.mobiusdigitalgames.com/outer-wilds.html" target="_blank">Outer Wilds</a>.</p>
                 </div>
             </div>
-            <div class="background_div ; flex" id="infos2">
-                <p class="center_text ; font_size_subtitle ; highlight ; flex" style="text-decoration:underline"> Informations utiles </p>
-                <p class="center_text ; font_size_paragraph"><span class="highlight ; contents">Développeur :</span> Mobius Digital </p>
-                <p class="center_text ; font_size_paragraph"><span class="highlight ; contents">Éditeur :</span> Annapurna Interactive </p>
-                <p class="center_text ; font_size_paragraph"><span class="highlight ; contents">Moteur de jeu :</span> Unity 5 </p>
-                <p class="center_text ; font_size_paragraph"><span class="highlight ; contents">Genre :</span> Exploration en monde ouvert </p>
-                <p class="center_text ; font_size_paragraph"><span class="highlight ; contents">Mode : </span> Solo </p>
-                <p class="center_text ; font_size_paragraph"><span class="highlight ; contents">Mode de publication : </span>Dématerialisé et physique (PS4) </p>
-                <p class="center_text ; font_size_paragraph"><span class="highlight ; contents">Plateformes et dates de sorties : </span></p>
-                <div class="center_text">
+
+            <!-- Infos on the game -->
+            <div class="background_div">
+                <h2 class="font_size_title ; highlight_turquoise"> Informations utiles </h2>
+                <p class="highlight"> Développeur : </p><p>Mobius Digital </p>
+                <br>
+                <p class="highlight"> Éditeur : </p><p>Annapurna Interactive </p>
+                <br>
+                <p class="highlight"> Moteur de jeu : </p><p>Unity 5 </p>
+                <br>
+                <p class="highlight"> Genre : </p><p>Exploration en monde ouvert </p>
+                <br>
+                <p class="highlight"> Mode : </p><p>Solo </p>
+                <br>
+                <p class="highlight"> Mode de publication : </p><p>Dématerialisé et physique (PS4) </p>
+                <br>
+                <p class="highlight"> Plateformes et dates de sorties : </p>
+                <div>
                     <img src="{{ asset('images/epic_logo.svg') }}" alt="epic">
-                    <p class="center_text ; font_size_paragraph">30 Mai 2019</p>
+                    <p>30 Mai 2019</p>
                     <br>
                     <img src="{{ asset('images/steam_logo.svg') }}" alt="steam">
-                    <p class="center_text ; font_size_paragraph">18 Juin 2020</p>
+                    <p>18 Juin 2020</p>
                     <br>
                     <img src="{{ asset('images/xbox_logo.svg') }}" alt="xbox">
-                    <p class="center_text ; font_size_paragraph">30 Mai 2019</p>
+                    <p>30 Mai 2019</p>
                     <br>
                     <img src="{{ asset('images/playstation_logo.svg') }}" width="20px" alt="playstation">
-                    <p class="center_text ; font_size_paragraph">15 Octobre 2019</p>
+                    <p>15 Octobre 2019</p>
                 </div>
+            </div>
+
+            <!-- Creator of the wiki -->
+            <div class="background_div ; font_size_subtitle">
+                <p> Ce wiki a été créé par Hikari / Ylan <br> Github : <a href="https://github.com/HikariYlan">HikariYlan</a></p>
             </div>
         </section>
 
-        <div class="center_text" id="links1">
+        <!-- Links to categories -->
+        <section id="categories">
             <figure>
                 <a href="{{ path('app_category', {category_name: 'endings'}) }}">
-                    <img src="{{ asset('images/endings_symbol.png') }}" alt="endings">
-                    <figcaption class="highlight ; font_size_paragraph ; center_text">Les fins</figcaption>
+                    <img id="category" src="{{ asset('images/endings_symbol.png') }}" alt="endings">
+                    <figcaption class="font_size_title">Les fins</figcaption>
                 </a>
             </figure>
             <figure>
                 <a href="{{ path('app_category', {category_name: 'gameplay'}) }}">
-                    <img src="{{ asset('images/gameplay_symbol.png') }}" alt="gameplay">
-                    <figcaption class="highlight ; font_size_paragraph ; center_text">Le gameplay</figcaption>
+                    <img id="category" src="{{ asset('images/gameplay_symbol.png') }}" alt="gameplay">
+                    <figcaption class="font_size_title">Le gameplay</figcaption>
                 </a>
             </figure>
             <figure>
                 <a href="{{ path('app_category', {category_name: 'musics'}) }}">
-                    <img src="{{ asset('images/musics_symbol.png') }}" alt="musics">
-                    <figcaption class="highlight ; font_size_paragraph ; center_text">Les musiques</figcaption>
+                    <img id="category" src="{{ asset('images/musics_symbol.png') }}" alt="musics">
+                    <figcaption class="font_size_title">Les musiques</figcaption>
                 </a>
             </figure>
             <figure>
                 <a href="{{ path('app_category', {category_name: 'characters'}) }}">
-                    <img src="{{ asset('images/characters_symbol.png') }}" alt="characters">
-                    <figcaption class="highlight ; font_size_paragraph ; center_text">Les personnages</figcaption>
+                    <img id="category" src="{{ asset('images/characters_symbol.png') }}" alt="characters">
+                    <figcaption class="font_size_title">Les personnages</figcaption>
                 </a>
             </figure>
-        </div>
-        <br>
-        <br>
-        <div class="center_text" id="links2" style="margin: 0 auto;">
+        </section>
+        <section id="categories">
             <figure>
                 <a href="{{ path('app_category', {category_name: 'planets'}) }}">
-                    <img src="{{ asset('images/planets_symbol.png') }}" alt="planets">
-                    <figcaption class="highlight ; font_size_paragraph ; center_text">Les planètes</figcaption>
+                    <img id="category" src="{{ asset('images/planets_symbol.png') }}" alt="planets">
+                    <figcaption class="font_size_title">Les planètes</figcaption>
                 </a>
             </figure>
             <figure>
                 <a href="{{ path('app_category', {category_name: 'species'}) }}">
-                    <img src="{{ asset('images/species_symbol.png') }}" alt="species">
-                    <figcaption class="highlight ; font_size_paragraph ; center_text">Les races</figcaption>
+                    <img id="category" src="{{ asset('images/species_symbol.png') }}" alt="species">
+                    <figcaption class="font_size_title">Les races</figcaption>
                 </a>
             </figure>
             <figure>
                 <a href="{{ path('app_category', {category_name: 'achievements'}) }}">
-                    <img src="{{ asset('images/achievements_symbol.png') }}" alt="achievements">
-                    <figcaption class="highlight ; font_size_paragraph ; center_text">Les succès</figcaption>
+                    <img id="category" src="{{ asset('images/achievements_symbol.png') }}" alt="achievements">
+                    <figcaption class="font_size_title">Les succès</figcaption>
                 </a>
             </figure>
-        </div>
+        </section>
     </main>
 {% endblock %}

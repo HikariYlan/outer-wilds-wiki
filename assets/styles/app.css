@@ -1,5 +1,5 @@
 html, body {
-    --background-color: rgb(11, 30, 38);
+    --background-color: 11, 30, 38;
     --orange: rgb(255, 124, 37);
     --turquoise: rgb(21, 205, 187);
     margin: 0 auto;
@@ -26,7 +26,7 @@ body {
     flex-direction: column;
     font-family: "Josefin Sans", serif;
     color: white;
-    background-color: var(--background-color);
+    background-color: rgb(var(--background-color));
     background-image: url(../images/mobile_background.webp);
     background-size: cover;
     background-attachment: fixed;
@@ -41,9 +41,8 @@ body {
 }
 
 .background_div {
-    background-color: var(--background-color);
+    background-color: rgb(var(--background-color));
     border-radius: 20px;
-    border: 1px solid var(--background-color);
     padding: 0.5em;
     margin: 1.5em;
 }
@@ -51,7 +50,8 @@ body {
 .background_div_transparent {
     background-color: rgba(var(--background-color), 0.7);
     border-radius: 20px;
-    border: 1px solid var(--background-color);
+    padding: 0.5em;
+    margin: 1.5em;
 }
 
 .center_text {
@@ -129,7 +129,7 @@ img[alt="epic"], img[alt="steam"], img[alt="xbox"], img[alt="playstation"] {
     color: var(--orange);
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
 
     body {
         background-image: url(../images/background_image.jpg);

@@ -128,3 +128,71 @@ img[alt="epic"], img[alt="steam"], img[alt="xbox"], img[alt="playstation"] {
     text-decoration-color: var(--turquoise);
     color: var(--orange);
 }
+
+@media screen and (min-width: 900px) {
+
+    body {
+        background-image: url(../images/background_image.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    body[id="spoiler"] {
+        display: flex;
+        flex-direction: column;
+        font-family: "Josefin Sans", serif;
+        color: white;
+        background-color: var(--background-color);
+        background-image: url(../images/background_image_spoiler.png);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .background_div {
+        background-color: var(--background-color);
+        margin: 2%;
+        padding: 1%;
+        text-align: justify;
+        border-radius: 20px;
+        border: 1px solid var(--background-color);
+    }
+
+    /* index.php */
+
+    #introduction {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #about {
+        margin-top: 0;
+    }
+
+    #useful_infos {
+        margin-top: 0;
+    }
+
+    img[alt="epic"], img[alt="steam"], img[alt="xbox"], img[alt="playstation"] {
+        width: 20%;
+    }
+
+    #categories {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #categories figure {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #category {
+        width: 200px;
+    }
+
+    #category ~ figcaption {
+        font-size: 1.5em;
+    }
+
+}

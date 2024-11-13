@@ -10,13 +10,13 @@
     <main>
         <!-- General infos -->
         <section>
+            <div class="background_div">
+                <p>Bienvenue sur le compendium d'Outer Wilds totalement traduit en français par des joueurs, pour les joueurs.
+                    Vous retrouverez ici toutes les informations concernant le jeu, des planètes aux succès en passant par les fins alternatives. </p>
+            </div>
             <!-- Introduction -->
-            <div>
-                <div class="background_div">
-                    <p>Bienvenue sur le compendium d'Outer Wilds totalement traduit en français par des joueurs, pour les joueurs.
-                        Vous retrouverez ici toutes les informations concernant le jeu, des planètes aux succès en passant par les fins alternatives. </p>
-                </div>
-                <div class="background_div">
+            <div id="introduction">
+                <div id="about" class="background_div">
                     <h2 class="font_size_title ; highlight_turquoise">A propos d'Outer Wilds :</h2>
                     <h3 class="font_size_subtitle ; highlight">Bienvenue dans le programme spatial</h3>
                     <p> Vous êtes le nouveau membre du programme Odyssée, un programme spatial naissant qui cherche des réponses dans un
@@ -36,41 +36,40 @@
                         beaucoup à découvrir dans
                         <a href="https://www.mobiusdigitalgames.com/outer-wilds.html" target="_blank">Outer Wilds</a>.</p>
                 </div>
-            </div>
-
-            <!-- Infos on the game -->
-            <div class="background_div">
-                <h2 class="font_size_title ; highlight_turquoise"> Informations utiles </h2>
-                <p class="highlight"> Développeur : </p><p>Mobius Digital </p>
-                <br>
-                <p class="highlight"> Éditeur : </p><p>Annapurna Interactive </p>
-                <br>
-                <p class="highlight"> Moteur de jeu : </p><p>Unity 5 </p>
-                <br>
-                <p class="highlight"> Genre : </p><p>Exploration en monde ouvert </p>
-                <br>
-                <p class="highlight"> Mode : </p><p>Solo </p>
-                <br>
-                <p class="highlight"> Mode de publication : </p><p>Dématerialisé et physique (PS4) </p>
-                <br>
-                <p class="highlight"> Plateformes et dates de sorties : </p>
-                <div>
-                    <img src="{{ asset('images/epic_logo.svg') }}" alt="epic">
-                    <p>30 Mai 2019</p>
+                <!-- Infos on the game -->
+                <div id="useful_infos" class="background_div">
+                    <h2 class="font_size_title ; highlight_turquoise"> Informations utiles </h2>
+                    <p class="highlight"> Développeur : </p><p>Mobius Digital </p>
                     <br>
-                    <img src="{{ asset('images/steam_logo.svg') }}" alt="steam">
-                    <p>18 Juin 2020</p>
+                    <p class="highlight"> Éditeur : </p><p>Annapurna Interactive </p>
                     <br>
-                    <img src="{{ asset('images/xbox_logo.svg') }}" alt="xbox">
-                    <p>30 Mai 2019</p>
+                    <p class="highlight"> Moteur de jeu : </p><p>Unity 5 </p>
                     <br>
-                    <img src="{{ asset('images/playstation_logo.svg') }}" width="20px" alt="playstation">
-                    <p>15 Octobre 2019</p>
+                    <p class="highlight"> Genre : </p><p>Exploration en monde ouvert </p>
+                    <br>
+                    <p class="highlight"> Mode : </p><p>Solo </p>
+                    <br>
+                    <p class="highlight"> Mode de publication : </p><p>Dématerialisé et physique (PS4) </p>
+                    <br>
+                    <p class="highlight"> Plateformes et dates de sorties : </p>
+                    <div>
+                        <img src="{{ asset('images/epic_logo.svg') }}" alt="epic">
+                        <p>30 Mai 2019</p>
+                        <br>
+                        <img src="{{ asset('images/steam_logo.svg') }}" alt="steam">
+                        <p>18 Juin 2020</p>
+                        <br>
+                        <img src="{{ asset('images/xbox_logo.svg') }}" alt="xbox">
+                        <p>30 Mai 2019</p>
+                        <br>
+                        <img src="{{ asset('images/playstation_logo.svg') }}" width="20px" alt="playstation">
+                        <p>15 Octobre 2019</p>
+                    </div>
                 </div>
             </div>
 
             <!-- Creator of the wiki -->
-            <div class="background_div ; font_size_subtitle">
+            <div id="creator" class="background_div ; font_size_subtitle">
                 <p> Ce wiki a été créé par Hikari / Ylan <br> Github : <a href="https://github.com/HikariYlan">HikariYlan</a></p>
             </div>
         </section>

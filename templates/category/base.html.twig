@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Outer Wilds Wiki - {{ category_name|capitalize }}</title>
+        <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
+        <link rel="icon" href="{% block icon %}{% endblock %}">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        {% block stylesheets %}{% endblock %}
+
+        {% block javascripts %}
+            {{ importmap() }}
+        {% endblock %}
+    </head>
+    <body id='{% block spoiler %}{% endblock %}'>
+        <header>
+            <img src="{{ asset('/images/main_logo.png') }}" alt="logo du jeu">
+            <p class="center_text ; font_size_title ; title">{{ category_title|capitalize }}</p>
+        </header>
+        <div class="background_div ; font_size_subtitle ; center_text">
+            <p>{% block intro_text %}{% endblock %}</p>
+            <p class="font_size_paragraph ; center_text">{% block intro_subtext %}{% endblock %}</p>
+        </div>
+        <ul id="entries_list" style="color: var(--turquoise)">
+            {% for path, title in entries_list %}
+                    {% if path == 'one-outof-nine-hundred-achievement' %}
+                        <div style="text-align: center;"><img src="{{ asset('/images/main_logo_dlc.png') }}" alt="main_logo_dlc"></div>
+                    {% endif %}
+                <li>
+                    <a href="{{ path('app_entry', {category_name: category_name, entry_name: path}) }}">{{ title }}</a>
+                </li>
+                <li>-----</li>
+            {% endfor %}
+            {% block tech_entry %}{% endblock %}
+        </ul>
+        <a href="{{ path('app_home') }}"><img title="Menu Principal" src="{{ asset('/images/icons/hub_symbol.png') }}" alt="Icône de la page d'accueil" style="width: 5%"></a>
+    </body>
+</html>

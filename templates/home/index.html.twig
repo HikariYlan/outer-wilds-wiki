@@ -1,0 +1,125 @@
+{% extends 'base.html.twig' %}
+
+{% block icon %}{{ asset('images/icons/hub_symbol.png') }}{% endblock %}
+
+{% block body %}
+    <header>
+        <img src="{{ asset('images/main_logo.png') }}" alt="logo du jeu">
+        <h1 class="font_size_title ; highlight_turquoise"> Bienvenue sur le wiki francophone d'Outer Wilds </h1>
+    </header>
+    <main>
+        <!-- General infos -->
+        <section>
+            <div class="background_div">
+                <p>Bienvenue sur le compendium d'Outer Wilds totalement traduit en français par des joueurs, pour les joueurs.
+                    Vous retrouverez ici toutes les informations concernant le jeu, des planètes aux succès en passant par les fins alternatives. </p>
+            </div>
+            <!-- Introduction -->
+            <div id="introduction">
+                <div id="about" class="background_div">
+                    <h2 class="font_size_title ; highlight_turquoise">A propos d'Outer Wilds :</h2>
+                    <h3 class="font_size_subtitle ; highlight">Bienvenue dans le programme spatial</h3>
+                    <p> Vous êtes le nouveau membre du programme Odyssée, un programme spatial naissant qui cherche des réponses dans un
+                        système solaire étrange et en constante évolution. Qui a construit les ruines sur la Rocaille ?
+                        Qu’est-ce qui se cache au cœur de Sombronces ? Pourquoi êtes-vous coincé dans une boucle temporelle, et peut-on
+                        l’arrêter ? Pour résoudre ces mystères, vous devrez vous aventurer dans les confins les plus dangereux de
+                        l’espace.</p>
+                    <h3 class="font_size_subtitle ; highlight">Un monde qui change avec le temps</h3>
+                    <p> Les planètes de Outer Wilds regorgent d’emplacements cachés qui changent avec le temps. Visitez une ville
+                        souterraine avant qu’elle ne soit engloutie par le sable, ou explorez la croûte d’une planète creuse qui
+                        s’effondre sous vos pieds. Chaque secret est gardé par des environnements dangereux et des catastrophes
+                        naturelles alors que le système solaire devient incontrôlable. Prenez votre équipement de randonnée, attachez
+                        bien vos bottes, vérifiez votre niveau d’oxygène et préparez-vous à vous aventurer dans l’espace. Utilisez votre
+                        petit guetteur pour éclairer des grottes sombres, prendre des photos ou tester les dangers dans votre
+                        environnement. Suivez un audio mystérieux avec votre onduloscope ou utilisez votre traducteur pour déchiffrer
+                        une énigme Nomaï ancienne. Naviguez dans les ténèbres de l’espace avec votre jetpack et votre vaisseau. Il y a
+                        beaucoup à découvrir dans
+                        <a href="https://www.mobiusdigitalgames.com/outer-wilds.html" target="_blank">Outer Wilds</a>.</p>
+                </div>
+                <!-- Infos on the game -->
+                <div id="useful_infos" class="background_div">
+                    <h2 class="font_size_title ; highlight_turquoise"> Informations utiles </h2>
+                    <p class="highlight"> Développeur : </p><p>Mobius Digital </p>
+                    <br>
+                    <p class="highlight"> Éditeur : </p><p>Annapurna Interactive </p>
+                    <br>
+                    <p class="highlight"> Moteur de jeu : </p><p>Unity 5 </p>
+                    <br>
+                    <p class="highlight"> Genre : </p><p>Exploration en monde ouvert </p>
+                    <br>
+                    <p class="highlight"> Mode : </p><p>Solo </p>
+                    <br>
+                    <p class="highlight"> Mode de publication : </p><p>Dématerialisé et physique (PS4) </p>
+                    <br>
+                    <p class="highlight"> Plateformes et dates de sorties : </p>
+                    <div>
+                        <img src="{{ asset('images/epic_logo.svg') }}" alt="epic">
+                        <p>30 Mai 2019</p>
+                        <br>
+                        <img src="{{ asset('images/steam_logo.svg') }}" alt="steam">
+                        <p>18 Juin 2020</p>
+                        <br>
+                        <img src="{{ asset('images/xbox_logo.svg') }}" alt="xbox">
+                        <p>30 Mai 2019</p>
+                        <br>
+                        <img src="{{ asset('images/playstation_logo.svg') }}" width="20px" alt="playstation">
+                        <p>15 Octobre 2019</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Creator of the wiki -->
+            <div id="creator" class="background_div ; font_size_subtitle">
+                <p> Ce wiki a été créé par Hikari / Ylan <br> Github : <a href="https://github.com/HikariYlan">HikariYlan</a></p>
+            </div>
+        </section>
+
+        <!-- Links to categories -->
+        <section id="categories">
+            <figure>
+                <a href="{{ path('app_category', {category_name: 'endings'}) }}">
+                    <img id="category" src="{{ asset('images/endings_symbol.png') }}" alt="endings">
+                    <figcaption class="font_size_title">Les fins</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="{{ path('app_category', {category_name: 'gameplay'}) }}">
+                    <img id="category" src="{{ asset('images/gameplay_symbol.png') }}" alt="gameplay">
+                    <figcaption class="font_size_title">Le gameplay</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="{{ path('app_category', {category_name: 'musics'}) }}">
+                    <img id="category" src="{{ asset('images/musics_symbol.png') }}" alt="musics">
+                    <figcaption class="font_size_title">Les musiques</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="{{ path('app_category', {category_name: 'characters'}) }}">
+                    <img id="category" src="{{ asset('images/characters_symbol.png') }}" alt="characters">
+                    <figcaption class="font_size_title">Les personnages</figcaption>
+                </a>
+            </figure>
+        </section>
+        <section id="categories">
+            <figure>
+                <a href="{{ path('app_category', {category_name: 'planets'}) }}">
+                    <img id="category" src="{{ asset('images/planets_symbol.png') }}" alt="planets">
+                    <figcaption class="font_size_title">Les planètes</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="{{ path('app_category', {category_name: 'species'}) }}">
+                    <img id="category" src="{{ asset('images/species_symbol.png') }}" alt="species">
+                    <figcaption class="font_size_title">Les races</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="{{ path('app_category', {category_name: 'achievements'}) }}">
+                    <img id="category" src="{{ asset('images/achievements_symbol.png') }}" alt="achievements">
+                    <figcaption class="font_size_title">Les succès</figcaption>
+                </a>
+            </figure>
+        </section>
+    </main>
+{% endblock %}

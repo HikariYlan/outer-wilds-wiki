@@ -12,9 +12,8 @@
         "symfony/flex": "^2",
         "symfony/framework-bundle": "7.3.*",
         "symfony/runtime": "7.3.*",
+        "symfony/twig-bundle": "7.3.*",
         "symfony/yaml": "7.3.*"
-    },
-    "require-dev": {
     },
     "config": {
         "allow-plugins": {
@@ -55,7 +54,24 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "start": [
+            "Composer\\Config::disableProcessTimeout",
+            "symfony serve"
+        ],
+        "test:phpcs": "php vendor/bin/php-cs-fixer fix --dry-run --diff",
+        "fix:phpcs": "php vendor/bin/php-cs-fixer fix",
+        "test:twigcs": "php vendor/bin/twig-cs-fixer fix",
+        "fix:twigcs": "php vendor/bin/twig-cs-fixer fix",
+        "test": [
+            "@test:phpcs",
+            "@test:twigcs"
+        ],
+        "fix": [
+            "@fix:phpcs",
+            "@fix:twigcs"
+        ],
+        "controller": "php bin/console make:controller"
     },
     "conflict": {
         "symfony/symfony": "*"
